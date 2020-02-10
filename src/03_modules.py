@@ -11,7 +11,7 @@ import sys
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
 
-# It's a list?
+# 0th index is the filename?
 for x in sys.argv:
     print(x)
 
