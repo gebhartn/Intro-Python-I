@@ -32,6 +32,5 @@ print(len(x))
 
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-# print(list(map(lambda n: n * 2, x)))
 result = map(lambda n: n * 2, x)
 print(list(result))
