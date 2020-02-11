@@ -15,11 +15,7 @@ print(f1(1, 2))
 
 # YOUR CODE HERE
 def f2(*args):
-    total = 0
-    for arg in args:
-        total += arg
-
-    return total
+    return sum(args)
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
