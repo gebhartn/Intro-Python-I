@@ -22,3 +22,27 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# Error Handling, throws on ValueError
+def use():
+    print('Usage: 14_cal.py [month?: int] [year? int]')
+    sys.exit()
+
+def main():
+    read = sys.argv
+    today = datetime.now()
+    month = calendar.month
+
+    try:
+        if len(read) == 1:
+            print(month(today.year, today.month))
+        if len(read) == 2:
+            print(month(today.year, int(read[1])))
+        if len(read) >= 3:
+            print(month(int(read[2]), int(read[1])))
+    # Errors out if input cannot be cast into a number
+    except:
+        use()
+
+if __name__ == "__main__":
+    main()
